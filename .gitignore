@@ -5,3 +5,6 @@ load_env.py
 test_env.py
 /profiles.yml
 /dbt/profiles copy 2.yml
+/python_dbt_streamlit/docker/airflow/logs
+/python_dbt_streamlit/logs/dbt.log
+/docker/airflow/logs/dag_id=ingestao_cliente
