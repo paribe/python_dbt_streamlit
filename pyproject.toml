@@ -1,0 +1,29 @@
+[project]
+name = "python-dbt-streamlit"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "paribe",email = "paribe@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<3.9.7 || >3.9.7"
+dependencies = [
+    "streamlit (>=1.43.0,<2.0.0)",
+    "dbt-postgres (>=1.9.0,<2.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "duckdb (>=1.2.0,<2.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "python_dbt_streamlit", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7"
+streamlit = "^1.43.0"
+

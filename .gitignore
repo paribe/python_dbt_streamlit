@@ -1,0 +1,7 @@
+.env
+.venv
+debug_env_detailed.py
+load_env.py
+test_env.py
+/profiles.yml
+/dbt/profiles copy 2.yml

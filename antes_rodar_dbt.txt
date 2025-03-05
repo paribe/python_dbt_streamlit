@@ -1,0 +1,8 @@
+# Carregue as variáveis do .env
+export $(cat /home/paribe/python_dbt_streamlit/.env | xargs)
+
+# Ou use o Python para carregar
+python3 /home/paribe/python_dbt_streamlit/load_env.py
+
+# Então rode o dbt debug
+dbt debug

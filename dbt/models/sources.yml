@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: postgres
+    database: banco_dremio_sql # Substitua pelo nome do seu banco de dados
+    schema: public  # Substitua pelo schema onde a tabela está
+    tables:
+      - name: tb_cliente

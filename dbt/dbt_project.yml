@@ -1,0 +1,12 @@
+name: 'projeto_dados'
+version: '1.0'
+profile: 'default'
+config-version: 2
+
+models:
+  bronze:
+    +materialized: table
+  prata:
+    +materialized: table
+  ouro:
+    +materialized: table
