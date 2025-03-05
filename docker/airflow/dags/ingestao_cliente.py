@@ -19,21 +19,21 @@ dag = DAG(
 # 1️⃣ Gerar arquivo CSV
 generate_csv = BashOperator(
     task_id='generate_csv',
-    bash_command='python ingestion/generate_csv.py',
+    bash_command='python /opt/airflow/ingestion/generate_csv.py',  # Caminho correto
     dag=dag,
 )
 
 # 2️⃣ Inserir no banco
 ingest_db = BashOperator(
     task_id='ingest_db',
-    bash_command='python ingestion/main.py',
+    bash_command='python /opt/airflow/ingestion/main.py',  # Caminho correto
     dag=dag,
 )
 
 # 3️⃣ Executar dbt run
 run_dbt = BashOperator(
     task_id='run_dbt',
-    bash_command='dbt run --profiles-dir dbt/',
+    bash_command='dbt run --profiles-dir /opt/airflow/dbt/',  # Caminho correto
     dag=dag,
 )
 

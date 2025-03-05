@@ -16,6 +16,7 @@ data = {
 }
 
 # Criar DataFrame e salvar como CSV
+print("Teste")
 df = pd.DataFrame(data)
 df.to_csv("ingestion/data/cliente.csv", index=False)
 

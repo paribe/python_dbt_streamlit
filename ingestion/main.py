@@ -16,7 +16,7 @@ DB_SCHEMA = os.getenv("DB_SCHEMA", "public")
 
 # Caminho do arquivo CSV
 csv_path = "ingestion/data/cliente.csv"
-
+print("Teste")
 try:
     # Conectar ao PostgreSQL
     conn = psycopg2.connect(
