@@ -1,0 +1,196 @@
+[2025-03-05T09:45:53.548+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-03-05T09:45:53.586+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-03-05T09:45:53.587+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-03-05T09:45:53.587+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2025-03-05T09:45:53.588+0000] {manager.py:729} INFO - There are 0 files in /opt/airflow/dags
+[2025-03-05T09:50:53.743+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2025-03-05T09:50:53.745+0000] {manager.py:729} INFO - There are 0 files in /opt/airflow/dags
+[2025-03-05T09:55:53.773+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2025-03-05T09:55:53.775+0000] {manager.py:729} INFO - There are 0 files in /opt/airflow/dags
+[2025-03-05T09:56:49.881+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-05T09:57:10.258+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-03-05T09:57:10.266+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-03-05T09:57:10.266+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-03-05T09:57:10.267+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2025-03-05T09:57:10.269+0000] {manager.py:729} INFO - There are 0 files in /opt/airflow/dags
+[2025-03-05T10:02:10.467+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2025-03-05T10:02:10.469+0000] {manager.py:729} INFO - There are 0 files in /opt/airflow/dags
+[2025-03-05T10:04:22.776+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-05T10:04:39.263+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-03-05T10:04:39.269+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-03-05T10:04:39.269+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-03-05T10:04:39.270+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2025-03-05T10:04:39.273+0000] {manager.py:729} INFO - There are 0 files in /opt/airflow/dags
+[2025-03-05T10:08:38.248+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-05T10:22:37.276+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-03-05T10:22:37.278+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-03-05T10:22:37.278+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-03-05T10:22:37.279+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-03-05T10:22:37.280+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2025-03-05T10:22:37.414+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/ingestao_cliente.py    161  0.08s             0           0
+/opt/airflow/dags/ola.py                 160  0.09s             0           0
+================================================================================
+[2025-03-05T10:22:38.473+0000] {manager.py:1017} ERROR - Processor for /opt/airflow/dags/ingestao_cliente.py exited with return code 1.
+[2025-03-05T10:23:07.573+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py                           0          -1  1.14s           2025-03-05T10:22:38
+/opt/airflow/dags/ola.py                                        1           0  0.81s           2025-03-05T10:22:38
+================================================================================
+[2025-03-05T10:23:37.867+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ola.py                                        1           0  0.17s           2025-03-05T10:23:08
+/opt/airflow/dags/ingestao_cliente.py                           1           0  0.11s           2025-03-05T10:23:08
+================================================================================
+[2025-03-05T10:24:08.141+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py                           1           0  0.18s           2025-03-05T10:23:39
+/opt/airflow/dags/ola.py                                        1           0  0.11s           2025-03-05T10:23:38
+================================================================================
+[2025-03-05T10:24:08.594+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-05T10:24:29.339+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-03-05T10:24:29.399+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-03-05T10:24:29.399+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-03-05T10:24:29.399+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-03-05T10:24:29.401+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2025-03-05T10:24:29.552+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/ingestao_cliente.py    162  0.07s             0           0
+/opt/airflow/dags/ola.py                 161  0.08s             0           0
+================================================================================
+[2025-03-05T10:25:00.181+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ola.py                                        1           0  0.88s           2025-03-05T10:24:30
+/opt/airflow/dags/ingestao_cliente.py    171  0.00s             1           0  0.59s           2025-03-05T10:24:30
+================================================================================
+[2025-03-05T10:25:30.548+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py    185  0.00s             1           0  0.18s           2025-03-05T10:25:00
+/opt/airflow/dags/ola.py                 182  0.01s             1           0  0.07s           2025-03-05T10:25:00
+================================================================================
+[2025-03-05T10:26:00.848+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ola.py                 198  0.01s             1           0  0.15s           2025-03-05T10:25:30
+/opt/airflow/dags/ingestao_cliente.py    201  0.00s             1           0  0.10s           2025-03-05T10:25:30
+================================================================================
+[2025-03-05T10:26:31.208+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py    214  0.00s             1           0  0.17s           2025-03-05T10:26:01
+/opt/airflow/dags/ola.py                 211  0.01s             1           0  0.15s           2025-03-05T10:26:00
+================================================================================
+[2025-03-05T10:27:01.482+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ola.py                 224  0.01s             1           0  0.15s           2025-03-05T10:26:31
+/opt/airflow/dags/ingestao_cliente.py    227  0.00s             1           0  0.09s           2025-03-05T10:26:31
+================================================================================
+[2025-03-05T10:27:31.751+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py    237  0.00s             1           0  0.14s           2025-03-05T10:27:01
+/opt/airflow/dags/ola.py                 234  0.01s             1           0  0.08s           2025-03-05T10:27:01
+================================================================================
+[2025-03-05T10:28:02.021+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ola.py                 247  0.01s             1           0  0.15s           2025-03-05T10:27:31
+/opt/airflow/dags/ingestao_cliente.py    250  0.00s             1           0  0.09s           2025-03-05T10:27:31
+================================================================================
+[2025-03-05T10:28:32.301+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py    260  0.00s             1           0  0.15s           2025-03-05T10:28:02
+/opt/airflow/dags/ola.py                 257  0.01s             1           0  0.08s           2025-03-05T10:28:02
+================================================================================
+[2025-03-05T10:28:52.730+0000] {manager.py:1129} WARNING - Skipping processing of missing file: /opt/airflow/dags/ola.py
+[2025-03-05T10:29:02.791+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py    267  0.00s             1           0  0.33s           2025-03-05T10:28:32
+================================================================================
+[2025-03-05T10:29:29.994+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-03-05T10:29:29.996+0000] {manager.py:741} INFO - There are 1 files in /opt/airflow/dags
+[2025-03-05T10:29:33.041+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py    272  0.00s             1           0  0.19s           2025-03-05T10:29:02
+================================================================================
+[2025-03-05T10:30:03.326+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py    281  0.00s             1           0  0.09s           2025-03-05T10:29:33
+================================================================================
+[2025-03-05T10:30:33.517+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py    288  0.00s             1           0  0.12s           2025-03-05T10:30:03
+================================================================================
+[2025-03-05T10:31:03.773+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingestao_cliente.py    293  0.01s             1           0  0.09s           2025-03-05T10:30:33
+================================================================================

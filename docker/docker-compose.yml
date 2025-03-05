@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   postgres:
-    image: postgres:13
+    image: postgres:15
     container_name: postgres_airflow
     environment:
       POSTGRES_USER: airflow
@@ -14,15 +12,16 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
   airflow_webserver:
-    image: apache/airflow:2.5.0
-    container_name: airflow_webserver
+    image: apache/airflow:2.8.3
+    user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}"
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__FERNET_KEY=46BKXOWm979ONi8eB8pY_m4Qf3zR3k673w57102000g= # Gere uma nova chave com 'airflow fernet-key'
     restart: always
     depends_on:
       - postgres
-    environment:
-      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
-      - AIRFLOW__WEBSERVER__SECRET_KEY=mysecretkey
     ports:
       - "8080:8080"
     volumes:
@@ -32,14 +31,16 @@ services:
     command: webserver
 
   airflow_scheduler:
-    image: apache/airflow:2.5.0
-    container_name: airflow_scheduler
-    restart: always
-    depends_on:
-      - airflow_webserver
+    image: apache/airflow:2.8.3
+    user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}"
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__FERNET_KEY=46BKXOWm979ONi8eB8pY_m4Qf3zR3k673w57102000g= # Gere uma nova chave com 'airflow fernet-key'
+    restart: always
+    depends_on:
+      - postgres
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
