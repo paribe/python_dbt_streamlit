@@ -2895,3 +2895,390 @@ drop table if exists "banco_dremio_sql"."public"."ouro_tb_cliente__dbt_backup" c
 [0m23:13:09.974678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3be75d5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3be6ceb460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3be32b8340>]}
 [0m23:13:09.975004 [debug] [MainThread]: Flushing usage events
 [0m23:13:12.703814 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:37:48.924438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f319f741030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31a05d2770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31a05d2710>]}
+
+
+============================== 05:37:48.929858 | edbb0867-801b-48e4-af32-8b53210972d5 ==============================
+[0m05:37:48.929858 [info ] [MainThread]: Running with dbt=1.9.2
+[0m05:37:48.930432 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/paribe/python_dbt_streamlit/dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/paribe/python_dbt_streamlit/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:37:48.957677 [info ] [MainThread]: dbt version: 1.9.2
+[0m05:37:48.958185 [info ] [MainThread]: python version: 3.10.16
+[0m05:37:48.958514 [info ] [MainThread]: python path: /home/paribe/python_dbt_streamlit/.venv/bin/python
+[0m05:37:48.958853 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m05:37:49.045728 [info ] [MainThread]: Using profiles dir at /home/paribe/python_dbt_streamlit/dbt
+[0m05:37:49.046320 [info ] [MainThread]: Using profiles.yml file at /home/paribe/python_dbt_streamlit/dbt/profiles.yml
+[0m05:37:49.046739 [info ] [MainThread]: Using dbt_project.yml file at /home/paribe/python_dbt_streamlit/dbt/dbt_project.yml
+[0m05:37:49.049116 [info ] [MainThread]: adapter type: postgres
+[0m05:37:49.049530 [info ] [MainThread]: adapter version: 1.9.0
+[0m05:37:49.151946 [info ] [MainThread]: Configuration:
+[0m05:37:49.152666 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:37:49.153145 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m05:37:49.153508 [info ] [MainThread]: Required dependencies:
+[0m05:37:49.153874 [debug] [MainThread]: Executing "git --help"
+[0m05:37:49.155838 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:37:49.156261 [debug] [MainThread]: STDERR: "b''"
+[0m05:37:49.156627 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:37:49.156952 [info ] [MainThread]: Connection:
+[0m05:37:49.157224 [info ] [MainThread]:   host: dpg-cv2rncij1k6c739ofhag-a.oregon-postgres.render.com
+[0m05:37:49.157529 [info ] [MainThread]:   port: 5432
+[0m05:37:49.157788 [info ] [MainThread]:   user: banco_dremio_sql_user
+[0m05:37:49.158044 [info ] [MainThread]:   database: banco_dremio_sql
+[0m05:37:49.158272 [info ] [MainThread]:   schema: public
+[0m05:37:49.158730 [info ] [MainThread]:   connect_timeout: 10
+[0m05:37:49.159160 [info ] [MainThread]:   role: None
+[0m05:37:49.159594 [info ] [MainThread]:   search_path: None
+[0m05:37:49.160044 [info ] [MainThread]:   keepalives_idle: 0
+[0m05:37:49.160650 [info ] [MainThread]:   sslmode: None
+[0m05:37:49.161183 [info ] [MainThread]:   sslcert: None
+[0m05:37:49.161665 [info ] [MainThread]:   sslkey: None
+[0m05:37:49.162088 [info ] [MainThread]:   sslrootcert: None
+[0m05:37:49.162470 [info ] [MainThread]:   application_name: dbt
+[0m05:37:49.162949 [info ] [MainThread]:   retries: 1
+[0m05:37:49.163823 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m05:37:49.246620 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m05:37:49.278380 [debug] [MainThread]: Using postgres connection "debug"
+[0m05:37:49.278846 [debug] [MainThread]: On debug: select 1 as id
+[0m05:37:49.279255 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:37:54.381232 [debug] [MainThread]: SQL status: SELECT 1 in 5.102 seconds
+[0m05:37:54.383611 [debug] [MainThread]: On debug: Close
+[0m05:37:54.384636 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m05:37:54.385438 [info ] [MainThread]: [32mAll checks passed![0m
+[0m05:37:54.390510 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 5.5329685, "process_in_blocks": "36328", "process_kernel_time": 0.209341, "process_mem_max_rss": "102388", "process_out_blocks": "24", "process_user_time": 2.522064}
+[0m05:37:54.391744 [debug] [MainThread]: Command `dbt debug` succeeded at 05:37:54.391499 after 5.53 seconds
+[0m05:37:54.392457 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:37:54.393545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f319f741030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31a05d26b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f319d77a500>]}
+[0m05:37:54.394860 [debug] [MainThread]: Flushing usage events
+[0m05:37:56.576598 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:38:06.432801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b40a09030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b4197e200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b4197e260>]}
+
+
+============================== 05:38:06.435314 | b92b3d30-f51d-4d6d-8f77-f0dda136bba1 ==============================
+[0m05:38:06.435314 [info ] [MainThread]: Running with dbt=1.9.2
+[0m05:38:06.435983 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/paribe/python_dbt_streamlit/dbt/logs', 'profiles_dir': '/home/paribe/python_dbt_streamlit/dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:38:06.626596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b92b3d30-f51d-4d6d-8f77-f0dda136bba1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b41966560>]}
+[0m05:38:06.686749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b92b3d30-f51d-4d6d-8f77-f0dda136bba1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b400ef460>]}
+[0m05:38:06.687613 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m05:38:06.759966 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m05:38:06.941048 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:38:06.941533 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:38:06.947071 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.bronze
+- models.prata
+- models.ouro
+[0m05:38:06.997852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b92b3d30-f51d-4d6d-8f77-f0dda136bba1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b3e149d80>]}
+[0m05:38:07.087892 [debug] [MainThread]: Wrote artifact WritableManifest to /home/paribe/python_dbt_streamlit/dbt/target/manifest.json
+[0m05:38:07.090435 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/paribe/python_dbt_streamlit/dbt/target/semantic_manifest.json
+[0m05:38:07.106202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b92b3d30-f51d-4d6d-8f77-f0dda136bba1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b3e149cf0>]}
+[0m05:38:07.106848 [info ] [MainThread]: Found 3 models, 1 seed, 1 source, 433 macros
+[0m05:38:07.107325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b92b3d30-f51d-4d6d-8f77-f0dda136bba1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b3e149d50>]}
+[0m05:38:07.108920 [info ] [MainThread]: 
+[0m05:38:07.109426 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m05:38:07.109918 [info ] [MainThread]: 
+[0m05:38:07.110598 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m05:38:07.118082 [debug] [ThreadPool]: Acquiring new postgres connection 'list_banco_dremio_sql'
+[0m05:38:07.150640 [debug] [ThreadPool]: Using postgres connection "list_banco_dremio_sql"
+[0m05:38:07.151174 [debug] [ThreadPool]: On list_banco_dremio_sql: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "connection_name": "list_banco_dremio_sql"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m05:38:07.151536 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:38:11.481099 [debug] [ThreadPool]: SQL status: SELECT 4 in 4.329 seconds
+[0m05:38:11.483511 [debug] [ThreadPool]: On list_banco_dremio_sql: Close
+[0m05:38:11.486662 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_banco_dremio_sql, now list_banco_dremio_sql_public)
+[0m05:38:11.496676 [debug] [ThreadPool]: Using postgres connection "list_banco_dremio_sql_public"
+[0m05:38:11.497375 [debug] [ThreadPool]: On list_banco_dremio_sql_public: BEGIN
+[0m05:38:11.497867 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:38:15.884081 [debug] [ThreadPool]: SQL status: BEGIN in 4.386 seconds
+[0m05:38:15.884871 [debug] [ThreadPool]: Using postgres connection "list_banco_dremio_sql_public"
+[0m05:38:15.885536 [debug] [ThreadPool]: On list_banco_dremio_sql_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "connection_name": "list_banco_dremio_sql_public"} */
+select
+      'banco_dremio_sql' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'banco_dremio_sql' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'banco_dremio_sql' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m05:38:16.601998 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.716 seconds
+[0m05:38:16.606163 [debug] [ThreadPool]: On list_banco_dremio_sql_public: ROLLBACK
+[0m05:38:17.319156 [debug] [ThreadPool]: On list_banco_dremio_sql_public: Close
+[0m05:38:17.336514 [debug] [MainThread]: Using postgres connection "master"
+[0m05:38:17.337438 [debug] [MainThread]: On master: BEGIN
+[0m05:38:17.338080 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:38:21.722283 [debug] [MainThread]: SQL status: BEGIN in 4.384 seconds
+[0m05:38:21.723441 [debug] [MainThread]: Using postgres connection "master"
+[0m05:38:21.724282 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m05:38:22.540522 [debug] [MainThread]: SQL status: SELECT 0 in 0.815 seconds
+[0m05:38:22.543314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b92b3d30-f51d-4d6d-8f77-f0dda136bba1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b3e122980>]}
+[0m05:38:22.544534 [debug] [MainThread]: On master: ROLLBACK
+[0m05:38:23.257432 [debug] [MainThread]: Using postgres connection "master"
+[0m05:38:23.258632 [debug] [MainThread]: On master: BEGIN
+[0m05:38:24.691284 [debug] [MainThread]: SQL status: BEGIN in 1.431 seconds
+[0m05:38:24.692988 [debug] [MainThread]: On master: COMMIT
+[0m05:38:24.694064 [debug] [MainThread]: Using postgres connection "master"
+[0m05:38:24.694849 [debug] [MainThread]: On master: COMMIT
+[0m05:38:25.407442 [debug] [MainThread]: SQL status: COMMIT in 0.712 seconds
+[0m05:38:25.409182 [debug] [MainThread]: On master: Close
+[0m05:38:25.416904 [debug] [Thread-1 (]: Began running node model.projeto_dados.bronze_tb_cliente
+[0m05:38:25.418301 [info ] [Thread-1 (]: 1 of 3 START sql table model public.bronze_tb_cliente .......................... [RUN]
+[0m05:38:25.419461 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_banco_dremio_sql_public, now model.projeto_dados.bronze_tb_cliente)
+[0m05:38:25.420642 [debug] [Thread-1 (]: Began compiling node model.projeto_dados.bronze_tb_cliente
+[0m05:38:25.440178 [debug] [Thread-1 (]: Writing injected SQL for node "model.projeto_dados.bronze_tb_cliente"
+[0m05:38:25.442370 [debug] [Thread-1 (]: Began executing node model.projeto_dados.bronze_tb_cliente
+[0m05:38:25.519073 [debug] [Thread-1 (]: Writing runtime sql for node "model.projeto_dados.bronze_tb_cliente"
+[0m05:38:25.520262 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.bronze_tb_cliente"
+[0m05:38:25.520842 [debug] [Thread-1 (]: On model.projeto_dados.bronze_tb_cliente: BEGIN
+[0m05:38:25.521319 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:38:29.914644 [debug] [Thread-1 (]: SQL status: BEGIN in 4.393 seconds
+[0m05:38:29.915820 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.bronze_tb_cliente"
+[0m05:38:29.916842 [debug] [Thread-1 (]: On model.projeto_dados.bronze_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.bronze_tb_cliente"} */
+
+  
+    
+
+  create  table "banco_dremio_sql"."public"."bronze_tb_cliente__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT *
+FROM "banco_dremio_sql"."public"."tb_cliente"
+  );
+  
+[0m05:38:30.587077 [debug] [Thread-1 (]: SQL status: SELECT 30 in 0.669 seconds
+[0m05:38:30.601161 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.bronze_tb_cliente"
+[0m05:38:30.602024 [debug] [Thread-1 (]: On model.projeto_dados.bronze_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.bronze_tb_cliente"} */
+alter table "banco_dremio_sql"."public"."bronze_tb_cliente" rename to "bronze_tb_cliente__dbt_backup"
+[0m05:38:31.244773 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.642 seconds
+[0m05:38:31.254660 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.bronze_tb_cliente"
+[0m05:38:31.255851 [debug] [Thread-1 (]: On model.projeto_dados.bronze_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.bronze_tb_cliente"} */
+alter table "banco_dremio_sql"."public"."bronze_tb_cliente__dbt_tmp" rename to "bronze_tb_cliente"
+[0m05:38:32.065228 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.808 seconds
+[0m05:38:32.103169 [debug] [Thread-1 (]: On model.projeto_dados.bronze_tb_cliente: COMMIT
+[0m05:38:32.104238 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.bronze_tb_cliente"
+[0m05:38:32.104908 [debug] [Thread-1 (]: On model.projeto_dados.bronze_tb_cliente: COMMIT
+[0m05:38:32.780739 [debug] [Thread-1 (]: SQL status: COMMIT in 0.675 seconds
+[0m05:38:32.796173 [debug] [Thread-1 (]: Applying DROP to: "banco_dremio_sql"."public"."bronze_tb_cliente__dbt_backup"
+[0m05:38:32.806114 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.bronze_tb_cliente"
+[0m05:38:32.807835 [debug] [Thread-1 (]: On model.projeto_dados.bronze_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.bronze_tb_cliente"} */
+drop table if exists "banco_dremio_sql"."public"."bronze_tb_cliente__dbt_backup" cascade
+[0m05:38:33.498165 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.689 seconds
+[0m05:38:33.503875 [debug] [Thread-1 (]: On model.projeto_dados.bronze_tb_cliente: Close
+[0m05:38:33.510712 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b92b3d30-f51d-4d6d-8f77-f0dda136bba1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b41c533a0>]}
+[0m05:38:33.512403 [info ] [Thread-1 (]: 1 of 3 OK created sql table model public.bronze_tb_cliente ..................... [[32mSELECT 30[0m in 8.09s]
+[0m05:38:33.513675 [debug] [Thread-1 (]: Finished running node model.projeto_dados.bronze_tb_cliente
+[0m05:38:33.515376 [debug] [Thread-1 (]: Began running node model.projeto_dados.prata_tb_cliente
+[0m05:38:33.516539 [info ] [Thread-1 (]: 2 of 3 START sql table model public.prata_tb_cliente ........................... [RUN]
+[0m05:38:33.517621 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.projeto_dados.bronze_tb_cliente, now model.projeto_dados.prata_tb_cliente)
+[0m05:38:33.518991 [debug] [Thread-1 (]: Began compiling node model.projeto_dados.prata_tb_cliente
+[0m05:38:33.530138 [debug] [Thread-1 (]: Writing injected SQL for node "model.projeto_dados.prata_tb_cliente"
+[0m05:38:33.533412 [debug] [Thread-1 (]: Began executing node model.projeto_dados.prata_tb_cliente
+[0m05:38:33.548462 [debug] [Thread-1 (]: Writing runtime sql for node "model.projeto_dados.prata_tb_cliente"
+[0m05:38:33.550075 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.prata_tb_cliente"
+[0m05:38:33.550947 [debug] [Thread-1 (]: On model.projeto_dados.prata_tb_cliente: BEGIN
+[0m05:38:33.551733 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:38:37.694125 [debug] [Thread-1 (]: SQL status: BEGIN in 4.142 seconds
+[0m05:38:37.695444 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.prata_tb_cliente"
+[0m05:38:37.696760 [debug] [Thread-1 (]: On model.projeto_dados.prata_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.prata_tb_cliente"} */
+
+  
+    
+
+  create  table "banco_dremio_sql"."public"."prata_tb_cliente__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT
+    *
+FROM "banco_dremio_sql"."public"."bronze_tb_cliente"
+  );
+  
+[0m05:38:38.414744 [debug] [Thread-1 (]: SQL status: SELECT 30 in 0.717 seconds
+[0m05:38:38.422258 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.prata_tb_cliente"
+[0m05:38:38.423308 [debug] [Thread-1 (]: On model.projeto_dados.prata_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.prata_tb_cliente"} */
+alter table "banco_dremio_sql"."public"."prata_tb_cliente" rename to "prata_tb_cliente__dbt_backup"
+[0m05:38:39.131129 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.707 seconds
+[0m05:38:39.138043 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.prata_tb_cliente"
+[0m05:38:39.138884 [debug] [Thread-1 (]: On model.projeto_dados.prata_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.prata_tb_cliente"} */
+alter table "banco_dremio_sql"."public"."prata_tb_cliente__dbt_tmp" rename to "prata_tb_cliente"
+[0m05:38:39.846928 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.707 seconds
+[0m05:38:39.851238 [debug] [Thread-1 (]: On model.projeto_dados.prata_tb_cliente: COMMIT
+[0m05:38:39.852104 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.prata_tb_cliente"
+[0m05:38:39.852798 [debug] [Thread-1 (]: On model.projeto_dados.prata_tb_cliente: COMMIT
+[0m05:38:40.563524 [debug] [Thread-1 (]: SQL status: COMMIT in 0.710 seconds
+[0m05:38:40.571038 [debug] [Thread-1 (]: Applying DROP to: "banco_dremio_sql"."public"."prata_tb_cliente__dbt_backup"
+[0m05:38:40.574768 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.prata_tb_cliente"
+[0m05:38:40.576650 [debug] [Thread-1 (]: On model.projeto_dados.prata_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.prata_tb_cliente"} */
+drop table if exists "banco_dremio_sql"."public"."prata_tb_cliente__dbt_backup" cascade
+[0m05:38:41.280684 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.702 seconds
+[0m05:38:41.286858 [debug] [Thread-1 (]: On model.projeto_dados.prata_tb_cliente: Close
+[0m05:38:41.290153 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b92b3d30-f51d-4d6d-8f77-f0dda136bba1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b3cbb8790>]}
+[0m05:38:41.292118 [info ] [Thread-1 (]: 2 of 3 OK created sql table model public.prata_tb_cliente ...................... [[32mSELECT 30[0m in 7.77s]
+[0m05:38:41.293584 [debug] [Thread-1 (]: Finished running node model.projeto_dados.prata_tb_cliente
+[0m05:38:41.295512 [debug] [Thread-1 (]: Began running node model.projeto_dados.ouro_tb_cliente
+[0m05:38:41.296635 [info ] [Thread-1 (]: 3 of 3 START sql table model public.ouro_tb_cliente ............................ [RUN]
+[0m05:38:41.297697 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.projeto_dados.prata_tb_cliente, now model.projeto_dados.ouro_tb_cliente)
+[0m05:38:41.298471 [debug] [Thread-1 (]: Began compiling node model.projeto_dados.ouro_tb_cliente
+[0m05:38:41.306455 [debug] [Thread-1 (]: Writing injected SQL for node "model.projeto_dados.ouro_tb_cliente"
+[0m05:38:41.308042 [debug] [Thread-1 (]: Began executing node model.projeto_dados.ouro_tb_cliente
+[0m05:38:41.402512 [debug] [Thread-1 (]: Writing runtime sql for node "model.projeto_dados.ouro_tb_cliente"
+[0m05:38:41.403774 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.ouro_tb_cliente"
+[0m05:38:41.404537 [debug] [Thread-1 (]: On model.projeto_dados.ouro_tb_cliente: BEGIN
+[0m05:38:41.405108 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:38:45.785991 [debug] [Thread-1 (]: SQL status: BEGIN in 4.381 seconds
+[0m05:38:45.787654 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.ouro_tb_cliente"
+[0m05:38:45.788816 [debug] [Thread-1 (]: On model.projeto_dados.ouro_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.ouro_tb_cliente"} */
+
+  
+    
+
+  create  table "banco_dremio_sql"."public"."ouro_tb_cliente__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+select estado, count(1) as quantidade_cliente
+from "banco_dremio_sql"."public"."prata_tb_cliente"
+group by estado
+order by 1
+  );
+  
+[0m05:38:46.503558 [debug] [Thread-1 (]: SQL status: SELECT 9 in 0.713 seconds
+[0m05:38:46.512733 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.ouro_tb_cliente"
+[0m05:38:46.513768 [debug] [Thread-1 (]: On model.projeto_dados.ouro_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.ouro_tb_cliente"} */
+alter table "banco_dremio_sql"."public"."ouro_tb_cliente" rename to "ouro_tb_cliente__dbt_backup"
+[0m05:38:47.220011 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.705 seconds
+[0m05:38:47.227063 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.ouro_tb_cliente"
+[0m05:38:47.227974 [debug] [Thread-1 (]: On model.projeto_dados.ouro_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.ouro_tb_cliente"} */
+alter table "banco_dremio_sql"."public"."ouro_tb_cliente__dbt_tmp" rename to "ouro_tb_cliente"
+[0m05:38:47.881809 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.653 seconds
+[0m05:38:47.885514 [debug] [Thread-1 (]: On model.projeto_dados.ouro_tb_cliente: COMMIT
+[0m05:38:47.886410 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.ouro_tb_cliente"
+[0m05:38:47.887178 [debug] [Thread-1 (]: On model.projeto_dados.ouro_tb_cliente: COMMIT
+[0m05:38:48.551752 [debug] [Thread-1 (]: SQL status: COMMIT in 0.664 seconds
+[0m05:38:48.557211 [debug] [Thread-1 (]: Applying DROP to: "banco_dremio_sql"."public"."ouro_tb_cliente__dbt_backup"
+[0m05:38:48.558810 [debug] [Thread-1 (]: Using postgres connection "model.projeto_dados.ouro_tb_cliente"
+[0m05:38:48.559660 [debug] [Thread-1 (]: On model.projeto_dados.ouro_tb_cliente: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "default", "target_name": "dev", "node_id": "model.projeto_dados.ouro_tb_cliente"} */
+drop table if exists "banco_dremio_sql"."public"."ouro_tb_cliente__dbt_backup" cascade
+[0m05:38:49.268222 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.708 seconds
+[0m05:38:49.271558 [debug] [Thread-1 (]: On model.projeto_dados.ouro_tb_cliente: Close
+[0m05:38:49.273062 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b92b3d30-f51d-4d6d-8f77-f0dda136bba1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b3f1ea440>]}
+[0m05:38:49.274507 [info ] [Thread-1 (]: 3 of 3 OK created sql table model public.ouro_tb_cliente ....................... [[32mSELECT 9[0m in 7.98s]
+[0m05:38:49.275878 [debug] [Thread-1 (]: Finished running node model.projeto_dados.ouro_tb_cliente
+[0m05:38:49.278844 [debug] [MainThread]: Using postgres connection "master"
+[0m05:38:49.279661 [debug] [MainThread]: On master: BEGIN
+[0m05:38:49.280292 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m05:38:53.569623 [debug] [MainThread]: SQL status: BEGIN in 4.289 seconds
+[0m05:38:53.570902 [debug] [MainThread]: On master: COMMIT
+[0m05:38:53.571905 [debug] [MainThread]: Using postgres connection "master"
+[0m05:38:53.572647 [debug] [MainThread]: On master: COMMIT
+[0m05:38:54.285655 [debug] [MainThread]: SQL status: COMMIT in 0.712 seconds
+[0m05:38:54.287017 [debug] [MainThread]: On master: Close
+[0m05:38:54.288682 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:38:54.289635 [debug] [MainThread]: Connection 'model.projeto_dados.ouro_tb_cliente' was properly closed.
+[0m05:38:54.290675 [info ] [MainThread]: 
+[0m05:38:54.291611 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 47.18 seconds (47.18s).
+[0m05:38:54.294041 [debug] [MainThread]: Command end result
+[0m05:38:54.346573 [debug] [MainThread]: Wrote artifact WritableManifest to /home/paribe/python_dbt_streamlit/dbt/target/manifest.json
+[0m05:38:54.349852 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/paribe/python_dbt_streamlit/dbt/target/semantic_manifest.json
+[0m05:38:54.363093 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/paribe/python_dbt_streamlit/dbt/target/run_results.json
+[0m05:38:54.363932 [info ] [MainThread]: 
+[0m05:38:54.365331 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:38:54.366409 [info ] [MainThread]: 
+[0m05:38:54.367524 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m05:38:54.369569 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 47.99102, "process_in_blocks": "3328", "process_kernel_time": 0.101776, "process_mem_max_rss": "111560", "process_out_blocks": "1800", "process_user_time": 2.798841}
+[0m05:38:54.370435 [debug] [MainThread]: Command `dbt run` succeeded at 05:38:54.370232 after 47.99 seconds
+[0m05:38:54.371227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b40a09030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b408d3eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b3e199ba0>]}
+[0m05:38:54.373385 [debug] [MainThread]: Flushing usage events
+[0m05:38:57.051092 [debug] [MainThread]: An error was encountered while trying to flush usage events
