@@ -8,3 +8,5 @@ test_env.py
 /python_dbt_streamlit/docker/airflow/logs
 /python_dbt_streamlit/logs/dbt.log
 /docker/airflow/logs/dag_id=ingestao_cliente
+/docker/airflow/logs/dag_processor_manager/dag_processor_manager.log
+/docker/airflow/logs/dag_id=ingestao_cliente
