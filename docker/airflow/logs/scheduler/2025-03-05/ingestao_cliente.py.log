@@ -195,3 +195,10 @@ DETAIL:  Key (dag_id)=(ingestao_cliente) already exists.
 [2025-03-05T10:31:03.814+0000] {logging_mixin.py:188} INFO - [2025-03-05T10:31:03.814+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2025-03-05T10:31:03.830+0000] {logging_mixin.py:188} INFO - [2025-03-05T10:31:03.830+0000] {dag.py:3834} INFO - Setting next_dagrun for ingestao_cliente to 2025-03-05 00:00:00+00:00, run_after=2025-03-06 00:00:00+00:00
 [2025-03-05T10:31:03.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ingestao_cliente.py took 0.072 seconds
+[2025-03-05T10:31:33.964+0000] {processor.py:161} INFO - Started process (PID=298) to work on /opt/airflow/dags/ingestao_cliente.py
+[2025-03-05T10:31:33.964+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ingestao_cliente.py for tasks to queue
+[2025-03-05T10:31:33.965+0000] {logging_mixin.py:188} INFO - [2025-03-05T10:31:33.965+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/ingestao_cliente.py
+[2025-03-05T10:31:33.975+0000] {processor.py:840} INFO - DAG(s) 'ingestao_cliente' retrieved from /opt/airflow/dags/ingestao_cliente.py
+[2025-03-05T10:31:34.000+0000] {logging_mixin.py:188} INFO - [2025-03-05T10:31:33.999+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-03-05T10:31:34.020+0000] {logging_mixin.py:188} INFO - [2025-03-05T10:31:34.020+0000] {dag.py:3834} INFO - Setting next_dagrun for ingestao_cliente to 2025-03-05 00:00:00+00:00, run_after=2025-03-06 00:00:00+00:00
+[2025-03-05T10:31:34.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ingestao_cliente.py took 0.079 seconds
